@@ -5,7 +5,7 @@
          version="4.0">
     <servlet>
         <servlet-name>Login</servlet-name>
-        <servlet-class>mainpackage.Login</servlet-class>
+        <servlet-class>Login</servlet-class>
     </servlet>
 
     <servlet-mapping>

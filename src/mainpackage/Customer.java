@@ -1,13 +1,9 @@
 package mainpackage;
-
-import dbcon.ConnectionProvider;
-import dbcon.Encryption;
-
+import dbcon.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import dbcon.*;
 
 public class Customer {
     private String id ;
@@ -18,9 +14,13 @@ public class Customer {
     private String email;
     private String password;
 
-    public Customer( String email, String password) {
+    public Customer() {
+        this.password = "NotSet";
+        this.id = "NotSet";
+    }
+    public Customer( String id, String password) {
 
-        this.email = email;
+        this.id = id;
         this.password = password;
     }
 
@@ -98,25 +98,30 @@ public class Customer {
 
                 if(currentHash.equals(userHash)){
                     int status = 0;
-                    pst1 = con.prepareStatement("select security.id, customer.firstname, customer.surname, customer.email from security inner join customer on security.id = customer.id where security.hash =? and security.id=?");
+                    pst1 = con.prepareStatement("select security.id, customer.surname from security inner join customer on security.id = customer.id where security.hash =? and security.id=?");
                     pst1.setString(1,userHash);
                     pst1.setString(2,id);
                     results1 = pst1.executeQuery();
-
+                    pst2 = con.prepareStatement("select security.id, customer.surname from security inner join customer on security.id = customer.id where security.hash =? and security.id=?");
+                    pst2.setString(1,userHash);
+                    pst2.setString(2,id);
+                    results2 = pst2.executeQuery();
                     con.close();
 
                     if(results1.next()){
                         status = 1;
                         firstname = results1.getString(2);
 
-
                     }
-
-                    else { status = 2;}
+                    else if (results2.next()){
+                        status = 2;
+                        firstname = results2.getString(2);
+                    }
+                    else { status = 3;}
                     return status;
                 }else {
                     con.close();
-                    return 3;
+                    return 4;
                 }
             }
         }catch (SQLException e){
@@ -125,5 +130,3 @@ public class Customer {
         return 0;
     }
 }
-
-

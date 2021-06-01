@@ -45,16 +45,14 @@
             <form  method="post" action="${pageContext.request.contextPath}/Login">
               <div class="form-group first">
                 <label for="id">E-mail</label>
-                <input type="text" class="form-control" placeholder="your-email@gmail.com" name= "id" id="id">
+                <input type="text" class="form-control" placeholder="your-email@gmail.com" name= "id" id="id" pattern="[A-Za-z0-9]+">
               </div>
               <div class="form-group last mb-3">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" placeholder="Your Password" id="password">
+                <label for="id">Password</label>
+                <input type ="password" class="form-control" placeholder="Password" name = "password" pattern="[A-Za-z0-9]+">
               </div>
 
-
-
-              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+              <input type="submit" value="Login" class="btn btn-block btn-primary">
               <p>
 
 

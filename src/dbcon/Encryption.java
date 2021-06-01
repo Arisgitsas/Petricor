@@ -1,5 +1,4 @@
 package dbcon;
-
 import sun.security.provider.SecureRandom;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

@@ -7,5 +7,17 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/DBkal1</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="web@localhost" uuid="7c64a079-954e-40bb-97be-7785a1987559">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/web</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="petricor@localhost" uuid="28adc2c4-2ea9-463a-9950-8e4332e52696">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/petricor</jdbc-url>
+    </data-source>
   </component>
 </project>

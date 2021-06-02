@@ -6,37 +6,36 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Customer {
-    private String id ;
-    private String firstname;
+    private String name;
     private String surname;
-    private int age;
+    private String age;
     private String sex;
     private String email;
     private String password;
 
     public Customer() {
         this.password = "NotSet";
-        this.id = "NotSet";
+        this.email = "NotSet";
     }
-    public Customer( String id, String password) {
+    public Customer( String email, String password) {
 
-        this.id = id;
+        this.email = email;
         this.password = password;
     }
 
-    public String getId() {
-        return id;
+    public String getEmail() {
+        return email;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getName() {
+        return name;
     }
 
     public String getSurname() {
         return surname;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
@@ -44,27 +43,21 @@ public class Customer {
         return sex;
     }
 
-    public String getEmail() {
-        return email;
-    }
 
     public String getPassword() {
         return password;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setSurname(String surname) {
         this.surname = surname;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
@@ -87,8 +80,8 @@ public class Customer {
         ResultSet results1 = null, results2 = null;
         try{
             con = ConnectionProvider.getCon();
-            pst1 = con.prepareStatement("select hash from security where id =?");
-            pst1.setString(1,this.getId());
+            pst1 = con.prepareStatement("select hash from security where email =?");
+            pst1.setString(1,this.getEmail());
             results1 = pst1.executeQuery();
 
             while(results1.next()){
@@ -98,24 +91,24 @@ public class Customer {
 
                 if(currentHash.equals(userHash)){
                     int status = 0;
-                    pst1 = con.prepareStatement("select security.id, customer.surname from security inner join customer on security.id = customer.id where security.hash =? and security.id=?");
+                    pst1 = con.prepareStatement("select security.email, customer.surname from security inner join customer on security.email = customer.email where security.hash =? and security.email=?");
                     pst1.setString(1,userHash);
-                    pst1.setString(2,id);
+                    pst1.setString(2,email);
                     results1 = pst1.executeQuery();
-                    pst2 = con.prepareStatement("select security.id, customer.surname from security inner join customer on security.id = customer.id where security.hash =? and security.id=?");
+                    pst2 = con.prepareStatement("select security.email, customer.surname from security inner join customer on security.email = customer.email where security.hash =? and security.email=?");
                     pst2.setString(1,userHash);
-                    pst2.setString(2,id);
+                    pst2.setString(2,email);
                     results2 = pst2.executeQuery();
                     con.close();
 
                     if(results1.next()){
                         status = 1;
-                        firstname = results1.getString(2);
+                        name = results1.getString(2);
 
                     }
                     else if (results2.next()){
                         status = 2;
-                        firstname = results2.getString(2);
+                        name = results2.getString(2);
                     }
                     else { status = 3;}
                     return status;

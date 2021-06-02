@@ -1,18 +1,18 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
-import javax.servlet.annotation.WebServlet;
+
 import mainpackage.*;
 
 public class Login extends javax.servlet.http.HttpServlet {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
-        String id = request.getParameter("id");
+        String email = request.getParameter("email");
         String pass = request.getParameter("password");
-        Customer customer = new Customer(id,pass);
+        Customer customer = new Customer(email,pass);
         int status = customer.login();
-        String firstname = customer.getFirstname();
+        String name = customer.getName();
         PrintWriter writer = response.getWriter();
 
         writer.println("<!DOCTYPE html><html>");
@@ -23,11 +23,11 @@ public class Login extends javax.servlet.http.HttpServlet {
         writer.println("<body>");
 
         if (status == 1){
-            writer.println("<h1 style = 'font-family: Calibri; font-size: 18;' >Supervisor "+firstname+" logged in successfully.</h1>");
+            writer.println("<h1 style = 'font-family: Calibri; font-size: 18;' >Supervisor "+name+" logged in successfully.</h1>");
             doGet(request,response,status);
 
         } else if (status == 2){
-            writer.println("<h1 style = 'font-family: Calibri; font-size: 18;' >Student "+firstname+" logged in successfully.</h1>");
+            writer.println("<h1 style = 'font-family: Calibri; font-size: 18;' >Student "+name+" logged in successfully.</h1>");
             doGet(request,response,status);
         }
         else if (status == 4){

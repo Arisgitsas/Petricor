@@ -42,8 +42,8 @@
                         </div>
                         <form  method="post" action="${pageContext.request.contextPath}/Login">
                             <div class="form-group first">
-                                <label>Username</label>
-                                <input class="form-control"type = "text" name = "id"  pattern="[A-Za-z0-9]+">
+                                <label>Email</label>
+                                <input class="form-control"type = "text" name = "email">
                             </div>
                             <div class="form-group last mb-3">
                                 <label>Password</label>

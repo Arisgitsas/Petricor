@@ -41,36 +41,37 @@
                             <p>Experience high tech online shopping</p>
                             <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
                         </div>
-<form action="#" method="post">
-    <div class="form-group first">
-        <label for="firstname">First Name</label>
-        <input type="text" class="form-control" placeholder="Name" id="firstname">
-    </div>
-    <div class="form-group first">
-        <label for="surname">Surname</label>
-        <input type="text" class="form-control" placeholder="Surname" id="surname">
-    </div>
-    <div class="form-group first">
-        <label for="age">Age</label>
-        <input type="text" class="form-control" placeholder="99" id="age">
-    </div>
-    <div class="form-group first">
-        <label for="sex">Sex</label>
-        <input type="text" class="form-control" placeholder="male/female" id="sex">
-    </div>
-    <div class="form-group first">
-        <label for="email">E-mail</label>
-        <input type="email" class="form-control" placeholder="yourmail@example.com" id="email">
-    </div>
-    <div class="form-group last mb-3">
-        <label for="password1">Password</label>
-        <input type="password" class="form-control" placeholder="Your Password" id="password1">
-    </div>
-    <div class="form-group last mb-3">
-        <label for="password2">Re-type password</label>
-        <input type="password" class="form-control" placeholder="Your Password" id="password2">
-    </div>
+<form action="${pageContext.request.contextPath}/Registers" method="post">
 
+    <div class="form-group first">
+        <label>First Name</label>
+        <input type="text" class="form-control" placeholder="Name" name="name">
+    </div>
+    <div class="form-group first">
+        <label>Surname</label>
+        <input type="text" class="form-control" placeholder="Surname" name="surname">
+    </div>
+    <div class="form-group first">
+        <label>Age</label>
+        <input type="text" class="form-control" placeholder="99" name="age">
+    </div>
+    <div class="form-group first">
+        <label>Sex</label>
+        <input type="text" class="form-control" placeholder="male/female" name="sex">
+    </div>
+    <div class="form-group first">
+        <label>E-mail</label>
+        <input type="email" class="form-control" placeholder="yourmail@example.com" name="email">
+    </div>
+    <div class="form-group last mb-3">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Your Password" name="password">
+    </div>
+  <!--  <div class="form-group last mb-3">
+        <label>Re-type password</label>
+        <input type="password" class="form-control" placeholder="Your Password" name="password2">
+    </div>
+-->
 
 
     <input type="submit" value="Register" class="btn btn-block btn-primary">

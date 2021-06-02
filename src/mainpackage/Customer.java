@@ -87,7 +87,7 @@ public class Customer {
         ResultSet results1 = null, results2 = null;
         try{
             con = ConnectionProvider.getCon();
-            pst1 = con.prepareStatement("select hash from users where id =?");
+            pst1 = con.prepareStatement("select hash from security where id =?");
             pst1.setString(1,this.getId());
             results1 = pst1.executeQuery();
 

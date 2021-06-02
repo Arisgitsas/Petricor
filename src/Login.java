@@ -42,10 +42,9 @@ public class Login extends javax.servlet.http.HttpServlet {
         writer.println("</html");
     }
 
-
     protected void doGet(javax.servlet.http.HttpServletRequest request,  javax.servlet.http.HttpServletResponse response, int status ) throws javax.servlet.ServletException, IOException {
         if (status == 1){
-            RequestDispatcher rd = request.getRequestDispatcher("/register.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("/mainsite.jsp");
             rd.forward(request,response);
         }
         else if (status == 2){

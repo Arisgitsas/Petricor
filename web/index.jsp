@@ -24,7 +24,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Petricor</title>
+    <title>Login</title>
 </head>
 <body>
 <div class="d-md-flex half">

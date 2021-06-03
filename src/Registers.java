@@ -1,3 +1,4 @@
+import dbcon.Encryption;
 import mainpackage.Registration;
 import mainpackage.Customer;
 import javax.servlet.ServletException;
@@ -25,12 +26,13 @@ public class Registers extends HttpServlet {
             String password = (String) request.getParameter("password");
             Registration register1 = new Registration(name, surname, age, sex, email, password);
             Registration.RegisterCustomer(name, surname, age, sex, email, password);
+            String hash = Encryption.makeHash(password);
+            Registration.RegisterinSecurity(hash,email);
             if (Registration.RegisterCustomer(name, surname, age, sex, email, password) == 1) {
                 out.print("<script>alert('Meeting arranged successfully!');window.history.back();</script>");
             } else {
                 out.print("<script>alert('Error in meeting arrangement...');window.history.back();</script>");
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }

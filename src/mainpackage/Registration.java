@@ -45,4 +45,22 @@ public class Registration extends Customer{
             return 0;
         }
     }
+    public static int RegisterinSecurity(String hash,String email){
+        Connection con;
+        PreparedStatement stmt2;
+        con = ConnectionProvider.getCon();
+        try{
+            stmt2 = con.prepareStatement("insert into security values(?,?) ;");
+            stmt2.setString(1, hash);
+            stmt2.setString(2,email);
+            stmt2.executeUpdate();
+            System.out.println("Registration in security is Done.");
+            con.close();
+            return 1;
+        } catch (SQLException e){
+            e.printStackTrace();
+            System.out.println("Registration in security Failed.");
+            return 0;
+        }
+    }
 }

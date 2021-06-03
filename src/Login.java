@@ -44,7 +44,7 @@ public class Login extends javax.servlet.http.HttpServlet {
 
     protected void doGet(javax.servlet.http.HttpServletRequest request,  javax.servlet.http.HttpServletResponse response, int status ) throws javax.servlet.ServletException, IOException {
         if (status == 1){
-            RequestDispatcher rd = request.getRequestDispatcher("/mainsite.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("/maiiin.jsp");
             rd.forward(request,response);
         }
         else if (status == 2){

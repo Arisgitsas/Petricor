@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: arisg
+  Date: 6/2/2021
+  Time: 5:16 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Metas -->
-    <title>Freshshop - Ecommerce Bootstrap 4 HTML Template</title>
+    <title>ThewayShop - Ecommerce Bootstrap 4 HTML Template</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -37,6 +44,71 @@
 </head>
 
 <body>
+<!-- Start Main Top -->
+<div class="main-top">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="custom-select-box">
+                    <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
+                        <option>¥ JPY</option>
+                        <option>$ USD</option>
+                        <option>€ EUR</option>
+                    </select>
+                </div>
+                <div class="right-phone-box">
+                    <p>Call US :- <a href="#"> +11 900 800 100</a></p>
+                </div>
+                <div class="our-link">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
+                        <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
+                        <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="login-box">
+                    <select id="basic1" class="selectpicker show-tick form-control" data-placeholder="Sign In">
+                        <option>Register Here</option>
+                        <option>Sign In</option>
+                    </select>
+                </div>
+                <div class="text-slid-box">
+                    <div id="offer-box" class="carouselTicker">
+                        <ul class="offer-box">
+                            <li>
+                                <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT80
+                            </li>
+                            <li>
+                                <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
+                            </li>
+                            <li>
+                                <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                            </li>
+                            <li>
+                                <i class="fab fa-opencart"></i> Off 50%! Shop Now
+                            </li>
+                            <li>
+                                <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                            </li>
+                            <li>
+                                <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
+                            </li>
+                            <li>
+                                <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
+                            </li>
+                            <li>
+                                <i class="fab fa-opencart"></i> Off 50%! Shop Now
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Main Top -->
 
 <!-- Start Main Top -->
 <header class="main-header">
@@ -48,16 +120,16 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="indexshop.jsp"><img src="imagesshop/logo.png" class="logo" alt=""></a>
+                <a class="navbar-brand" href="shopindex.jsp"><img src="imagesshop/logo.png" class="logo" alt=""></a>
             </div>
             <!-- End Header Navigation -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li class="nav-item active"><a class="nav-link" href="indexshop.jsp">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shopindex.jsp">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.jsp">About Us</a></li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                         <ul class="dropdown-menu">
                             <li><a href="shopping.jsp">Sidebar Shop</a></li>
@@ -65,11 +137,11 @@
                             <li><a href="cart.html">Cart</a></li>
                             <li><a href="checkout.html">Checkout</a></li>
                             <li><a href="my-account.html">My Account</a></li>
-                            <li><a href="wishlist.jsp">Wishlist</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactus.jsp">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.jsp.">Contact Us</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -78,13 +150,11 @@
             <div class="attr-nav">
                 <ul>
                     <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                    <li class="side-menu">
-                        <a href="#">
-                            <i class="fa fa-shopping-bag"></i>
-                            <span class="badge">3</span>
-                            <p>My Cart</p>
-                        </a>
-                    </li>
+                    <li class="side-menu"><a href="#">
+                        <i class="fa fa-shopping-bag"></i>
+                        <span class="badge">3</span>
+                        <p>My Cart</p>
+                    </a></li>
                 </ul>
             </div>
             <!-- End Atribute Navigation -->
@@ -134,67 +204,120 @@
 </div>
 <!-- End Top Search -->
 
-<!-- Start Slider -->
-<div id="slides-shop" class="cover-slides">
-    <ul class="slides-container">
-        <li class="text-center">
-            <img src="imagesshop/banner-01.jpg" alt="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="m-b-20"><strong>Καλώς Ήρθατε στην<br> Petricor</strong></h1>
-                        <p class="m-b-40">100% Βιολογικά Καλλυντικά<br> για γυναίκες, άνδρες και παιδιά.</p>
-                        <p><a class="btn hvr-hover" href="#">Αγοράστε εδώ!</a></p>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="text-center">
-            <img src="imagesshop/banner-02.jpg" alt="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="m-b-20"><strong>Welcome To <br>  Petricor</strong></h1>
-                        <p class="m-b-40">100% Organic Cosmetics<br> for women, men and children.</p>
-                        <p><a class="btn hvr-hover" href="#">Shop Here!</a></p>
-                    </div>
-                </div>
-            </div>
-        </li>
-    </ul>
-    <div class="slides-navigation">
-        <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-        <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-    </div>
-</div>
-<!-- End Slider -->
-
-<!-- Start Categories  -->
-<div class="categories-shop">
+<!-- Start All Title Box -->
+<div class="all-title-box">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="shop-cat-box">
-                    <img class="img-fluid" src="imagesshop/categories_img_01.jpg" alt="" />
-                    <a class="btn hvr-hover" href="#">Γυναίκες</a>
-                </div>
+            <div class="col-lg-12">
+                <h2>Wishlist</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                    <li class="breadcrumb-item active">Wishlist</li>
+                </ul>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="shop-cat-box">
-                    <img class="img-fluid" src="imagesshop/categories_img_02.jpg" alt="" />
-                    <a class="btn hvr-hover" href="#">Άνδρες</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="shop-cat-box">
-                    <img class="img-fluid" src="imagesshop/categories_img_03.jpg" alt="" />
-                    <a class="btn hvr-hover" href="#">Παιδιά</a>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+
+<!-- Start Wishlist  -->
+<div class="wishlist-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="table-main table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Images</th>
+                            <th>Product Name</th>
+                            <th>Unit Price </th>
+                            <th>Stock</th>
+                            <th>Add Item</th>
+                            <th>Remove</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="thumbnail-img">
+                                <a href="#">
+                                    <img class="img-fluid" src="imagesshop/img-pro-01.jpg" alt="" />
+                                </a>
+                            </td>
+                            <td class="name-pr">
+                                <a href="#">
+                                    Lorem ipsum dolor sit amet
+                                </a>
+                            </td>
+                            <td class="price-pr">
+                                <p>$ 80.0</p>
+                            </td>
+                            <td class="quantity-box">In Stock</td>
+                            <td class="add-pr">
+                                <a class="btn hvr-hover" href="#">Add to Cart</a>
+                            </td>
+                            <td class="remove-pr">
+                                <a href="#">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="thumbnail-img">
+                                <a href="#">
+                                    <img class="img-fluid" src="imagesshop/img-pro-02.jpg" alt="" />
+                                </a>
+                            </td>
+                            <td class="name-pr">
+                                <a href="#">
+                                    Lorem ipsum dolor sit amet
+                                </a>
+                            </td>
+                            <td class="price-pr">
+                                <p>$ 60.0</p>
+                            </td>
+                            <td class="quantity-box">In Stock</td>
+                            <td class="add-pr">
+                                <a class="btn hvr-hover" href="#">Add to Cart</a>
+                            </td>
+                            <td class="remove-pr">
+                                <a href="#">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="thumbnail-img">
+                                <a href="#">
+                                    <img class="img-fluid" src="imagesshop/img-pro-03.jpg" alt="" />
+                                </a>
+                            </td>
+                            <td class="name-pr">
+                                <a href="#">
+                                    Lorem ipsum dolor sit amet
+                                </a>
+                            </td>
+                            <td class="price-pr">
+                                <p>$ 30.0</p>
+                            </td>
+                            <td class="quantity-box">In Stock</td>
+                            <td class="add-pr">
+                                <a class="btn hvr-hover" href="#">Add to Cart</a>
+                            </td>
+                            <td class="remove-pr">
+                                <a href="#">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- End Categories -->
+<!-- End Wishlist -->
 
 <!-- Start Instagram Feed  -->
 <div class="instagram-box">
@@ -282,6 +405,7 @@
     </div>
 </div>
 <!-- End Instagram Feed  -->
+
 
 
 <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>

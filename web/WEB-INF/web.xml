@@ -5,20 +5,29 @@
          version="4.0">
     <servlet>
         <servlet-name>Login</servlet-name>
-        <servlet-class>Login</servlet-class>
+        <servlet-class>servlets.LoginServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
-        <url-pattern>/Login</url-pattern>
+        <url-pattern>/servlets.LoginServlet</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>Registers</servlet-name>
-        <servlet-class>Registers</servlet-class>
+        <servlet-name>PatientServlet</servlet-name>
+        <servlet-class>servlets.PatientServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Registers</servlet-name>
-        <url-pattern>/Registers</url-pattern>
+        <servlet-name>PatientServlet</servlet-name>
+        <url-pattern>/servlets.PatientServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ShowPreviousAppointmentsServlet</servlet-name>
+        <servlet-class>servlets.ShowPreviousAppointmentsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowPreviousAppointmentsServlet</servlet-name>
+        <url-pattern>/servlets.ShowPreviousAppointmentsServlet</url-pattern>
     </servlet-mapping>
 </web-app>

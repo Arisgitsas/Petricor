@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="DBkal1@localhost" uuid="2da7e667-5b58-4455-b392-974097055e4b">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/DBkal1</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="web@localhost" uuid="7c64a079-954e-40bb-97be-7785a1987559">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/web</jdbc-url>
-    </data-source>
     <data-source source="LOCAL" name="petricor@localhost" uuid="28adc2c4-2ea9-463a-9950-8e4332e52696">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/petricor</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="java2021@localhost" uuid="89ca43ea-6f8e-4924-a252-91e96e351930">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/java2021</jdbc-url>
     </data-source>
   </component>
 </project>

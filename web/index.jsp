@@ -36,14 +36,13 @@
                 <div class="col-md-12">
                     <div class="form-block mx-auto">
                         <div class="text-center mb-5">
-                            <h3>Login to <strong>Petricor</strong></h3>
-                            <p>Experience high tech online shopping</p>
-                            <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
+                            <h3>Appointments System <strong>Login</strong></h3>
+                            <p>Login with your Username and Password</p>
                         </div>
-                        <form  method="post" action="${pageContext.request.contextPath}/Login">
+                        <form  method="post" action="${pageContext.request.contextPath}/servlets.LoginServlet">
                             <div class="form-group first">
-                                <label>Email</label>
-                                <input class="form-control"type = "text" name = "email">
+                                <label>Username</label>
+                                <input class="form-control"type = "text" name = "username">
                             </div>
                             <div class="form-group last mb-3">
                                 <label>Password</label>

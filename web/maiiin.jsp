@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,7 +36,6 @@
     <![endif]-->
 
 </head>
-
 <body>
 
 <!-- Start Main Top -->
@@ -48,15 +48,148 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="indexshop.jsp"><img src="imageshop/logo1.png" style= "width:225px; height:145px; class="logo" alt=""></a>
+                <a class="navbar-brand" href="maiiin.jsp"><img src="imageshop/logo1.png" style= "width:225px; height:145px; class="logo" alt=""></a>
             </div>
             <!-- End Header Navigation -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li class="nav-item active"><a class="nav-link" href="maiiin.jsp">Petricor</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.jsp">Πληροφοριες</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="about.jsp">Petricor</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Προϊόντα</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Πρόσωπο</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shopping.jsp">Καθαρισμός & Τόνωση</a></li>
+                                    <li><a href="cart.jsp">Οροί & Λάδια Προσώπου</a></li>
+                                    <li><a href="checkout.jsp">Κρέμες Προσώπου</a></li>
+                                    <li><a href="wishlist.jsp">Απολέπιση Προσώπου</a></li>
+                                    <li><a href="shopping.jsp">Μάσκες Προσώπου</a></li>
+                                    <li><a href="cart.jsp">Περιποίηση Ματιών</a></li>
+                                    <li><a href="checkout.jsp">Περιποίηση Χειλιών</a></li>
+                                    <li><a href="wishlist.jsp">Ανδρική Περιποίηση & Ξύρισμα</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Σώμα</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shopping.jsp">Σαπούνια</a></li>
+                                    <li><a href="cart.jsp">Αφρόλουτρα</a></li>
+                                    <li><a href="checkout.jsp">Κρέμες & Λάδια Σώματος</a></li>
+                                    <li><a href="wishlist.jsp">Scrubs & Άλατα Σώματος</a></li>
+                                    <li><a href="shopping.jsp">Περιποίηση Χεριών</a></li>
+                                    <li><a href="cart.jsp">Παιδικά Αφρόλουτρα</a></li>
+                                    <li><a href="checkout.jsp">Ανδρική Περιποίηση Σώματος</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Μαλλιά</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shopping.jsp">Σαμπουάν</a></li>
+                                    <li><a href="cart.jsp">Κρέμες Μαλλιών</a></li>
+                                    <li><a href="checkout.jsp">Μάσκες Μαλλιών</a></li>
+                                    <li><a href="wishlist.jsp">Παιδική Περιποίηση Μαλλιών</a></li>
+                                    <li><a href="wishlist.jsp">Ανδρική Περιποίηση Μαλλιών</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Αντηλιακά</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shopping.jsp">Αντηλιακά Προσώπου</a></li>
+                                    <li><a href="cart.jsp">Αντηλιακά Σώματος</a></li>
+                                    <li><a href="checkout.jsp">Αντηλιακά Σπρέυ & Λάδια</a></li>
+                                    <li><a href="wishlist.jsp">Αντηλιακά Μαλλιών</a></li>
+                                    <li><a href="wishlist.jsp">Περιποίηση Μετά Τον Ήλιο</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Σειρές</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shopping.jsp">Syros</a></li>
+                                    <li><a href="cart.jsp">Ioannina</a></li>
+                                    <li><a href="checkout.jsp">Kerkyra</a></li>
+                                    <li><a href="wishlist.jsp">Acheron</a></li>
+                                    <li><a href="shopping.jsp">Rethymno</a></li>
+                                    <li><a href="cart.jsp">Monemvasia</a></li>
+                                    <li><a href="checkout.jsp">Rhodos</a></li>
+                                    <li><a href="wishlist.jsp">Amorgos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Ανάγκη</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Πρόσωπο</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shopping.jsp">Καθαρισμός</a></li>
+                                    <li><a href="cart.jsp">Ενυδάτωση Προσώπου</a></li>
+                                    <li><a href="checkout.jsp">Τόνωση</a></li>
+                                    <li><a href="wishlist.jsp">Ακμή</a></li>
+                                    <li><a href="wishlist.jsp">Πρώτα Σημάδια Γήρανσης</a></li>
+                                    <li><a href="cart.jsp">Μαύροι Κύκλοι & Κουρασμένα Μάτια</a></li>
+                                    <li><a href="checkout.jsp">Θαμπό Δέρμα/ Ανομοιόμορφος χρωματικός τόνος</a></li>
+                                    <li><a href="wishlist.jsp">Μείωση Ρυτίδων/ Σύσφιγξη</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Σώμα</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shopping.jsp">Θρέψη & Ενυδάτωση</a></li>
+                                    <li><a href="cart.jsp">Καταπράυνση</a></li>
+                                    <li><a href="checkout.jsp">Σύσφιγξη / Κυτταρίτιδα</a></li>
+                                    <li><a href="wishlist.jsp">Χαλάρωση & Ευεξία</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Μαλλιά</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shopping.jsp">Τριχόπτωση</a></li>
+                                    <li><a href="cart.jsp">Πιτυρίδα / Ξηροδερμία</a></li>
+                                    <li><a href="checkout.jsp">Λιπαρότητα</a></li>
+                                    <li><a href="wishlist.jsp">Λιπαρές Ρίζες & Ξηρές Άκρες</a></li>
+                                    <li><a href="shopping.jsp">Ευαίσθητο Τριχωτό</a></li>
+                                    <li><a href="cart.jsp">Ξηρά / Ταλαιπωρημένα Μαλλιά</a></li>
+                                    <li><a href="checkout.jsp">Βαμμένα Μαλλιά</a></li>
+                                    <li><a href="wishlist.jsp">Λάμψη & Αναζωογόνηση Μαλλιών</a></li>
+                                    <li><a href="checkout.jsp">Ενυδάτωση Μαλλιών</a></li>
+                                    <li><a href="wishlist.jsp">Καθημερινή Περιποίηση Μαλλιών</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Αντηλιακά</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shopping.jsp">Αντηλιακά Προσώπου</a></li>
+                                    <li><a href="cart.jsp">Αντηλιακά Σώματος</a></li>
+                                    <li><a href="checkout.jsp">Αντηλιακά Σπρέυ & Λάδια</a></li>
+                                    <li><a href="wishlist.jsp">Αντηλιακά Μαλλιών</a></li>
+                                    <li><a href="wishlist.jsp">Περιποίηση Μετά Τον Ήλιο</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Σειρές</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shopping.jsp">Syros</a></li>
+                                    <li><a href="cart.jsp">Ioannina</a></li>
+                                    <li><a href="checkout.jsp">Kerkyra</a></li>
+                                    <li><a href="wishlist.jsp">Acheron</a></li>
+                                    <li><a href="shopping.jsp">Rethymno</a></li>
+                                    <li><a href="cart.jsp">Monemvasia</a></li>
+                                    <li><a href="checkout.jsp">Rhodos</a></li>
+                                    <li><a href="wishlist.jsp">Amorgos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="dropdown">
                         <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Αγορα</a>
                         <ul class="dropdown-menu">
@@ -131,6 +264,7 @@
 </div>
 <!-- End Top Search -->
 
+
 <!-- Start Slider -->
 <div id="slides-shop" class="cover-slides">
     <ul class="slides-container">
@@ -147,7 +281,7 @@
             </div>
         </li>
         <li class="text-center">
-            <img src="imageshop/banner-02.jpg" alt="">
+            <img src="imageshop/banner-01.jpg" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -165,26 +299,25 @@
     </div>
 </div>
 <!-- End Slider -->
-
 <!-- Start Categories  -->
 <div class="categories-shop">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="shop-cat-box">
-                    <img class="img-fluid" src="imageshop/categories_img_01.jpg" alt="" />
+                    <img class="img-fluid" style= "height:500px;" src="imageshop/categories_img_01.jpg" alt="" />
                     <a class="btn hvr-hover" href="#">Γυναίκες</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="shop-cat-box">
-                    <img class="img-fluid" src="imageshop/categories_img_02.jpg" alt="" />
+                    <img class="img-fluid" style= "height:500px;"src="imageshop/categories_img_02.jpg" alt="" />
                     <a class="btn hvr-hover" href="#">Άνδρες</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="shop-cat-box">
-                    <img class="img-fluid" src="imageshop/categories_img_03.jpg" alt="" />
+                    <img class="img-fluid" style= "height:500px;" src="imageshop/categories_img_03.jpg" alt="" />
                     <a class="btn hvr-hover" href="#">Παιδιά</a>
                 </div>
             </div>
